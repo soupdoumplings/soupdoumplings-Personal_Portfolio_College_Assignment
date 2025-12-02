@@ -92,6 +92,16 @@ h1 {
     letter-spacing: 0.05em;
 }
 
+/*Hamburger button*/
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* Navigation */
 nav ul {
     list-style: none;
@@ -419,26 +429,84 @@ footer p {
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Header layout */
     header .container {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        gap: 1.5rem;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 1rem 2rem;
     }
 
+    /* Hamburger button */
+    .hamburger {
+        display: block;
+        width: fit-content;
+        position: relative;
+        right: -.5rem;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        z-index: 10;
+        transition: transform 0.2s ease;
+        padding: 5px;
+        border-left: 1px solid;
+    }
+
+
+    .hamburger:focus {
+        outline: none;
+        box-shadow: none;
+        background: none;
+    }
+
+    
+    .hamburger:active {
+        transform: scale(0.8); 
+        transition: transform 0.1s ease;
+    }
+
+    /* Navigation menu */
+    nav ul {
+        position: absolute;
+        top: 75px;
+        right: 1rem;
+        background: rgba(0,0,0,0.85);
+        flex-direction: column;
+        width: 200px;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        gap: 1rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        text-align: left;
+    }
+
+    nav ul.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    /* Hero section */
     #typing-text {
         font-size: 3rem;
     }
 
+    /* About section */
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
 
+    /* Skills section */
     .grid-container {
         flex-direction: column;
         gap: 1.5rem;
@@ -449,12 +517,16 @@ footer p {
         max-width: 100%;
     }
 
+    /* Details list */
     .details-list {
         border-left: none;
         padding-left: 0;
     }
 
+    /* Contact form */
     .wired-form {
         padding: 2rem;
     }
 }
+
+
