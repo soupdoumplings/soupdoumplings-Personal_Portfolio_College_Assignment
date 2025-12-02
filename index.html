@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ujwal Shrestha</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+	<div class="video-background-wrapper">
+        <video autoplay muted loop id="background-video">
+            <source src="video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <header>
+            <div class="container">
+                <h1>Ujwal Shrestha</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Portfolio</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home">
+            <div class="intro-text">
+               <p>Student Developer</p>
+					<span id="typing-text"></span>
+					<p>Learning, building, and occasionally vibing with code.</p>
+
+            </div>
+        </section>
+    </div>
+
+	<main class="container">
+		
+		<section id="about" class="reveal">
+			<h2>About Me</h2>
+			<div class="about-grid">
+				<div class="content-box">
+					<p>"Don't be shy from what you love. So, if you love something march onward with a chest full of confidence."</p>
+				</div>
+				<div class="details-list">
+					<p><span>Location</span> <span>Kathmandu, Nepal</span></p>
+					<p><span>Experience</span> <span>3+ Years</span></p>
+					<p><span>Specialty</span> <span>Web & Game Dev</span></p>
+					<p><span>Email</span> <span>chhyangg119365@gmail.com</span></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="reveal">
+			<h2>Expertise</h2>
+			<div class="grid-container">
+				<div class="skill-item">HTML5</div>
+				<div class="skill-item">CSS3</div>
+				<div class="skill-item">JavaScript</div>
+				<div class="skill-item">PHP</div>
+				<div class="skill-item">Unity</div>
+				<div class="skill-item">Python(Numpy and Pandas)</div>
+				<div class="skill-item">Java</div>
+				<div class="skill-item">MySQL</div>
+			</div>
+		</section>
+
+		<section id="projects" class="reveal">
+			<h2>Selected Works</h2>
+			<div class="project-list">
+				<a href="http://weather-app.42web.io/?i=1" class="project-card">
+					<h3>E-Commerce Boutique</h3>
+					<figure class="image-wrapper">
+						<img src="Projects/Weather_Forecast_website.png" alt="Image of Weather Forecast website">
+						<figcaption>Fig: Weather Forecast applying both Frontend and Backend</figcaption>
+					</figure>
+					<p>Weather Forecast Webapp using Frontend(HTML, CSS, JS) and Backend(PHP, Mysql)</p>
+					<span class="arrow">View Project</span>
+				</a>
+				<a href="#" class="project-card">
+					<h3>Task Manager</h3>
+					<figure class="imageWrapper">
+						<img src="Projects/Metaphorical journey inside the human body through the eyes of an RBC.png" alt="Image of Unity Game Demo">
+						<figcaption>Fig: Unity Demo Game</figcaption>
+					</figure>
+					<span class="arrow">View Project</span>
+				</a>
+				<a href="#" class="project-card">
+					<h3>2D Platformer</h3>
+					<figure class="imageWrapper">
+						<img src="Projects/Small Banking System.png" alt="Image of a Small Banking System">
+						<figcaption>Fig: Small Banking System Using Java</figcaption>
+					</figure>
+					<span class="arrow">View Project</span>
+				</a>
+			</div>
+		</section>
+
+		<section id="contact" class="reveal">
+			<h2>Get in Touch</h2>
+			<form class="wired-form">
+				<div class="input-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Your Name" required>
+				</div>
+				<div class="input-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Your Email" required>
+				</div>
+				<div class="input-group">
+					<label for="message">Message</label>
+					<textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+				</div>
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 Ujwal Shrestha. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script src="JS/script.js"></script>
+</body>
+</html>
