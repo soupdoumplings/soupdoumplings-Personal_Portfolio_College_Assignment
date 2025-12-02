@@ -90,6 +90,8 @@ h1 {
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 0.05em;
+    border-right: 1px solid ;
+    padding: 10px;
 }
 
 /*Hamburger button*/
@@ -161,16 +163,6 @@ h2::after {
     margin: 1rem auto 0;
 }
 
-/* Home Section */
-#home {
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 /* Header */
 header {
     padding: 3rem 0;
@@ -185,6 +177,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 12rem;
 }
 
 .intro-text p {
@@ -384,6 +377,11 @@ header {
     background-color: #fff;
 }
 
+input.invalid {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
 button {
     background-color: #2c2c2c;
     color: #fff;
@@ -451,8 +449,7 @@ footer p {
         cursor: pointer;
         z-index: 10;
         transition: transform 0.2s ease;
-        padding: 5px;
-        border-left: 1px solid;
+        padding: 5px;;
     }
 
 
@@ -495,7 +492,6 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Hero section */
     #typing-text {
         font-size: 3rem;
     }
