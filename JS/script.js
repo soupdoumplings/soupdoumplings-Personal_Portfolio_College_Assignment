@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-    // Simple Typing Effect
+    
     var text = "Ujwal Shrestha";
     var typingElement = document.getElementById('typing-text');
     var index = 0;
@@ -14,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     setTimeout(typeText, 800);
 
-
-    // Simple Smooth Scroll (works in most browsers)
     var links = document.querySelectorAll('a[href^="#"]');
     for (var i = 0; i < links.length; i++) {
         links[i].addEventListener('click', function (event) {
@@ -30,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-
-    // Simple Reveal Animation (without observers)
     var revealElements = document.querySelectorAll('.reveal');
 
     function revealOnScroll() {
@@ -48,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-
-    // Simple Form Handling
     var form = document.querySelector('form');
     if (form) {
         form.addEventListener('submit', function (e) {
